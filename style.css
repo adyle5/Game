@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1, h3 {
+    clear: both;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+#start-button{
+    width: 500px;
+    margin: 10px auto;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+#character {
+    background-image: url(figure.png);
+    width: 34px;
+    height: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-image: url(ball.png);
+    background-color: transparent;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 1s infinite;
+}
+
+#score-container {
+    margin-left: 300px;
+}
+
+@keyframes block {
+    0%{left: 480px;}
+    100%{left: 0px;}
+}
+
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
