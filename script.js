@@ -3,6 +3,10 @@ var block= document.getElementById("block");
 var score = document.getElementById("score");
 
 function jump() { 
+    if (block.style.display == "none") {
+        return;
+    }
+
     if (character.classList != "animate") {
         character.classList.add("animate");
         
